@@ -1,6 +1,6 @@
 {
   "name": "@febbyjs/logger",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "logging utility",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "json",
     "log"
   ],
-  "author": "vasu vanka",
+  "author": "Vasu Vanka",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/febbyjs/logger/issues"
