@@ -21,12 +21,11 @@ To log user text as json object
 **Examples**
 
 ```javascript
-logger.log('hello world', 'log');
-```
+const logger = require('@febbyjs/logger');
 
-```javascript
-//log output
-{ type: 'log', message: 'hello world' }
+logger.log('hello world', 'log');
+
+//{ type: 'log', message: 'hello world' }
 ```
 
 ## error
@@ -40,6 +39,8 @@ To log error text with red color
 **Examples**
 
 ```javascript
+const logger = require('@febbyjs/logger');
+
 logger.error('hello world');
 ```
 
@@ -54,6 +55,8 @@ To log success text with green color
 **Examples**
 
 ```javascript
+const logger = require('@febbyjs/logger');
+
 logger.success('hello world');
 ```
 
@@ -68,6 +71,8 @@ To log info text with blue color
 **Examples**
 
 ```javascript
+const logger = require('@febbyjs/logger');
+
 logger.info('hello world');
 ```
 
@@ -82,6 +87,8 @@ To log a warning with yellow color
 **Examples**
 
 ```javascript
+const logger = require('@febbyjs/logger');
+
 logger.warning('hello world');
 ```
 
@@ -112,5 +119,7 @@ To log text with given rgb color code or color name
 **Examples**
 
 ```javascript
+const logger = require('@febbyjs/logger');
+
 logger.customLog('hello world','magentaBright');
 ```
