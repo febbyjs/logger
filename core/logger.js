@@ -42,7 +42,7 @@ async function log(message, kind = 'log') {
  * To log a plain text
  * @param message - log text
  */
-async function plainLog(message) {
+function plainLog(message) {
     logger.log(message);
 }
 
@@ -51,16 +51,19 @@ async function plainLog(message) {
  * @param message - log text
  * @param type - type of log. ex: log,error,info,warning
  * @example
- * logger.log('hello world', 'log');
- * @example
- * //log output
- * { type: 'log', message: 'hello world' }
+ * const logger = require('@febbyjs/logger');
+ *
+ *logger.log('hello world', 'log');
+ *
+ * //{ type: 'log', message: 'hello world' }
  */
 module.exports.log = (message, type = 'log') => log(`${message}`, type);
 /**
  * To log error text with red color
  * @param message - log text
  * @example
+ * const logger = require('@febbyjs/logger');
+ *
  * logger.error('hello world');
  */
 module.exports.error = (message) => {
@@ -70,6 +73,8 @@ module.exports.error = (message) => {
  * To log success text with green color
  * @param message - log text
  * @example
+ * const logger = require('@febbyjs/logger');
+ *
  * logger.success('hello world');
  */
 module.exports.success = (message) => {
@@ -79,6 +84,8 @@ module.exports.success = (message) => {
  * To log info text with blue color
  * @param message - log text
  * @example
+ * const logger = require('@febbyjs/logger');
+ *
  * logger.info('hello world');
  */
 module.exports.info = (message) => {
@@ -88,6 +95,8 @@ module.exports.info = (message) => {
  * To log a warning with yellow color
  * @param message - log text
  * @example
+ * const logger = require('@febbyjs/logger');
+ *
  * logger.warning('hello world');
  */
 module.exports.warning = (message) => {
@@ -113,6 +122,8 @@ module.exports.warning = (message) => {
  * yanBright,
  * whiteBright ]
  * @example
+ * const logger = require('@febbyjs/logger');
+ *
  * logger.customLog('hello world','magentaBright');
  */
 module.exports.customLog = (message, color = 'white') => {
