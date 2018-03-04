@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>@febbyjs/logger 0.1.0 | Documentation</title>
+  <title>@febbyjs/logger 0.1.1 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
@@ -14,7 +14,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>@febbyjs/logger</h3>
-          <div class='mb1'><code>0.1.0</code></div>
+          <div class='mb1'><code>0.1.1</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -155,11 +155,11 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>logger.log(<span class="hljs-string">'hello world'</span>, <span class="hljs-string">'log'</span>);</pre>
-    
-      
-      <pre class='p1 overflow-auto round fill-light'><span class="hljs-comment">//log output</span>
-{ <span class="hljs-attr">type</span>: <span class="hljs-string">'log'</span>, <span class="hljs-attr">message</span>: <span class="hljs-string">'hello world'</span> }</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@febbyjs/logger'</span>);
+
+logger.log(<span class="hljs-string">'hello world'</span>, <span class="hljs-string">'log'</span>);
+
+<span class="hljs-comment">//{ type: 'log', message: 'hello world' }</span></pre>
     
   
 
@@ -226,7 +226,9 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>logger.error(<span class="hljs-string">'hello world'</span>);</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@febbyjs/logger'</span>);
+
+logger.error(<span class="hljs-string">'hello world'</span>);</pre>
     
   
 
@@ -293,7 +295,9 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>logger.success(<span class="hljs-string">'hello world'</span>);</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@febbyjs/logger'</span>);
+
+logger.success(<span class="hljs-string">'hello world'</span>);</pre>
     
   
 
@@ -360,7 +364,9 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>logger.info(<span class="hljs-string">'hello world'</span>);</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@febbyjs/logger'</span>);
+
+logger.info(<span class="hljs-string">'hello world'</span>);</pre>
     
   
 
@@ -427,7 +433,9 @@
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>logger.warning(<span class="hljs-string">'hello world'</span>);</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@febbyjs/logger'</span>);
+
+logger.warning(<span class="hljs-string">'hello world'</span>);</pre>
     
   
 
@@ -521,7 +529,9 @@ whiteBright
     <div class='py1 quiet mt1 prose-big'>Example</div>
     
       
-      <pre class='p1 overflow-auto round fill-light'>logger.customLog(<span class="hljs-string">'hello world'</span>,<span class="hljs-string">'magentaBright'</span>);</pre>
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-keyword">const</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@febbyjs/logger'</span>);
+
+logger.customLog(<span class="hljs-string">'hello world'</span>,<span class="hljs-string">'magentaBright'</span>);</pre>
     
   
 
